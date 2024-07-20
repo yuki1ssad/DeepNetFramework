@@ -1,0 +1,5 @@
+if(EXISTS "/home/wangxuefei/workspace/DeepNetFramework/build/tests/test_tensor/test_tensor[1]_tests.cmake")
+  include("/home/wangxuefei/workspace/DeepNetFramework/build/tests/test_tensor/test_tensor[1]_tests.cmake")
+else()
+  add_test(test_tensor_NOT_BUILT test_tensor_NOT_BUILT)
+endif()
