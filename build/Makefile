@@ -143,6 +143,19 @@ all_in_one/fast:
 .PHONY : all_in_one/fast
 
 #=============================================================================
+# Target rules for targets named test_network
+
+# Build rule for target.
+test_network: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_network
+.PHONY : test_network
+
+# fast build rule for target.
+test_network/fast:
+	$(MAKE) $(MAKESILENT) -f tests/test_network/CMakeFiles/test_network.dir/build.make tests/test_network/CMakeFiles/test_network.dir/build
+.PHONY : test_network/fast
+
+#=============================================================================
 # Target rules for targets named test_tensor
 
 # Build rule for target.
@@ -165,6 +178,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... all_in_one"
+	@echo "... test_network"
 	@echo "... test_tensor"
 .PHONY : help
 

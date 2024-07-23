@@ -40,7 +40,7 @@ void Op_Map::backward()
 {
     if (_endOfGraph) {
         dim3 BLOCK(_outtensors[0]->_elementCount < 1024 ? _outtensors[0]->_elementCount : 1024);
-        dim3 GRID(max((int(_outtensors[0]->_elementCount), 1024)) / 1024 + 1);
+        dim3 GRID(max(int(_outtensors[0]->_elementCount), 1024) / 1024 + 1);
         kmemset<<<GRID, BLOCK, 0, _cudaStream>>>(
             _outtensors[0]->_elementCount,
             _outtensors[0]->_pgradient,

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cassert>
 #include "Operators.h"
 #include "kernel_matmul.h"
 #include "kernel_transpose.h"

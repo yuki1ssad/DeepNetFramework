@@ -302,7 +302,17 @@ void Tensor::fillDataRandom(float lower_bound, float upper_bound)
     }
 }
 
-void Tensor::updateWeights(float alpha, cudaStream_t cudastream)
+void Tensor::mirror(const std::map<Tensor*, Tensor*>& tensorMap, const std::map<Operators*, Operators*>& opMap)
+{
+    if (_pfrom) {
+        tensorMap.at(this)->_pfrom = opMap.at(_pfrom);
+    }
+    for (Operators *op : _to) {
+        tensorMap.at(this)->_to.push_back(opMap.at(op));
+    }
+}
+
+void Tensor::updateWeights(float lr, cudaStream_t cudaStream)
 {
     if (!_pdata || !_pgradient) {
         return;
@@ -311,7 +321,15 @@ void Tensor::updateWeights(float alpha, cudaStream_t cudastream)
     if (_dataMemType == cudaMemoryTypeDevice) {
         dim3 BLOCK(32);
         dim3 GRID((_elementCount + BLOCK.x - 1) / BLOCK.x);
-        //  TODO
+        kelementwiseInplace<<<GRID, BLOCK, 0, cudaStream>>>(
+            _elementCount,
+            _pdata,
+            lr,
+            _pgradient,
+            ELE_OP::SUB
+        );
+    } else {
+        std::cout << "UpdateWeights should be done on device!" << std::endl;
     }
 
 }

@@ -143,6 +143,126 @@ all_in_one/fast:
 	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/build
 .PHONY : all_in_one/fast
 
+Op_elementwise.o: Op_elementwise.cu.o
+.PHONY : Op_elementwise.o
+
+# target to build an object file
+Op_elementwise.cu.o:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o
+.PHONY : Op_elementwise.cu.o
+
+Op_elementwise.i: Op_elementwise.cu.i
+.PHONY : Op_elementwise.i
+
+# target to preprocess a source file
+Op_elementwise.cu.i:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.i
+.PHONY : Op_elementwise.cu.i
+
+Op_elementwise.s: Op_elementwise.cu.s
+.PHONY : Op_elementwise.s
+
+# target to generate assembly for a file
+Op_elementwise.cu.s:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.s
+.PHONY : Op_elementwise.cu.s
+
+Op_map.o: Op_map.cu.o
+.PHONY : Op_map.o
+
+# target to build an object file
+Op_map.cu.o:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Op_map.cu.o
+.PHONY : Op_map.cu.o
+
+Op_map.i: Op_map.cu.i
+.PHONY : Op_map.i
+
+# target to preprocess a source file
+Op_map.cu.i:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Op_map.cu.i
+.PHONY : Op_map.cu.i
+
+Op_map.s: Op_map.cu.s
+.PHONY : Op_map.s
+
+# target to generate assembly for a file
+Op_map.cu.s:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Op_map.cu.s
+.PHONY : Op_map.cu.s
+
+Op_matmul.o: Op_matmul.cu.o
+.PHONY : Op_matmul.o
+
+# target to build an object file
+Op_matmul.cu.o:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o
+.PHONY : Op_matmul.cu.o
+
+Op_matmul.i: Op_matmul.cu.i
+.PHONY : Op_matmul.i
+
+# target to preprocess a source file
+Op_matmul.cu.i:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Op_matmul.cu.i
+.PHONY : Op_matmul.cu.i
+
+Op_matmul.s: Op_matmul.cu.s
+.PHONY : Op_matmul.s
+
+# target to generate assembly for a file
+Op_matmul.cu.s:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Op_matmul.cu.s
+.PHONY : Op_matmul.cu.s
+
+Op_reduce.o: Op_reduce.cu.o
+.PHONY : Op_reduce.o
+
+# target to build an object file
+Op_reduce.cu.o:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o
+.PHONY : Op_reduce.cu.o
+
+Op_reduce.i: Op_reduce.cu.i
+.PHONY : Op_reduce.i
+
+# target to preprocess a source file
+Op_reduce.cu.i:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Op_reduce.cu.i
+.PHONY : Op_reduce.cu.i
+
+Op_reduce.s: Op_reduce.cu.s
+.PHONY : Op_reduce.s
+
+# target to generate assembly for a file
+Op_reduce.cu.s:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Op_reduce.cu.s
+.PHONY : Op_reduce.cu.s
+
+Operators.o: Operators.cu.o
+.PHONY : Operators.o
+
+# target to build an object file
+Operators.cu.o:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Operators.cu.o
+.PHONY : Operators.cu.o
+
+Operators.i: Operators.cu.i
+.PHONY : Operators.i
+
+# target to preprocess a source file
+Operators.cu.i:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Operators.cu.i
+.PHONY : Operators.cu.i
+
+Operators.s: Operators.cu.s
+.PHONY : Operators.s
+
+# target to generate assembly for a file
+Operators.cu.s:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Operators.cu.s
+.PHONY : Operators.cu.s
+
 Tensor.o: Tensor.cu.o
 .PHONY : Tensor.o
 
@@ -167,6 +287,126 @@ Tensor.cu.s:
 	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/Tensor.cu.s
 .PHONY : Tensor.cu.s
 
+compute_graph.o: compute_graph.cu.o
+.PHONY : compute_graph.o
+
+# target to build an object file
+compute_graph.cu.o:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/compute_graph.cu.o
+.PHONY : compute_graph.cu.o
+
+compute_graph.i: compute_graph.cu.i
+.PHONY : compute_graph.i
+
+# target to preprocess a source file
+compute_graph.cu.i:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/compute_graph.cu.i
+.PHONY : compute_graph.cu.i
+
+compute_graph.s: compute_graph.cu.s
+.PHONY : compute_graph.s
+
+# target to generate assembly for a file
+compute_graph.cu.s:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/compute_graph.cu.s
+.PHONY : compute_graph.cu.s
+
+kernel_elementwise.o: kernel_elementwise.cu.o
+.PHONY : kernel_elementwise.o
+
+# target to build an object file
+kernel_elementwise.cu.o:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o
+.PHONY : kernel_elementwise.cu.o
+
+kernel_elementwise.i: kernel_elementwise.cu.i
+.PHONY : kernel_elementwise.i
+
+# target to preprocess a source file
+kernel_elementwise.cu.i:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.i
+.PHONY : kernel_elementwise.cu.i
+
+kernel_elementwise.s: kernel_elementwise.cu.s
+.PHONY : kernel_elementwise.s
+
+# target to generate assembly for a file
+kernel_elementwise.cu.s:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.s
+.PHONY : kernel_elementwise.cu.s
+
+kernel_map.o: kernel_map.cu.o
+.PHONY : kernel_map.o
+
+# target to build an object file
+kernel_map.cu.o:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/kernel_map.cu.o
+.PHONY : kernel_map.cu.o
+
+kernel_map.i: kernel_map.cu.i
+.PHONY : kernel_map.i
+
+# target to preprocess a source file
+kernel_map.cu.i:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/kernel_map.cu.i
+.PHONY : kernel_map.cu.i
+
+kernel_map.s: kernel_map.cu.s
+.PHONY : kernel_map.s
+
+# target to generate assembly for a file
+kernel_map.cu.s:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/kernel_map.cu.s
+.PHONY : kernel_map.cu.s
+
+l1loss.o: l1loss.cu.o
+.PHONY : l1loss.o
+
+# target to build an object file
+l1loss.cu.o:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/l1loss.cu.o
+.PHONY : l1loss.cu.o
+
+l1loss.i: l1loss.cu.i
+.PHONY : l1loss.i
+
+# target to preprocess a source file
+l1loss.cu.i:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/l1loss.cu.i
+.PHONY : l1loss.cu.i
+
+l1loss.s: l1loss.cu.s
+.PHONY : l1loss.s
+
+# target to generate assembly for a file
+l1loss.cu.s:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/l1loss.cu.s
+.PHONY : l1loss.cu.s
+
+network.o: network.cu.o
+.PHONY : network.o
+
+# target to build an object file
+network.cu.o:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/network.cu.o
+.PHONY : network.cu.o
+
+network.i: network.cu.i
+.PHONY : network.i
+
+# target to preprocess a source file
+network.cu.i:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/network.cu.i
+.PHONY : network.cu.i
+
+network.s: network.cu.s
+.PHONY : network.s
+
+# target to generate assembly for a file
+network.cu.s:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/network.cu.s
+.PHONY : network.cu.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -177,9 +417,39 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... all_in_one"
+	@echo "... Op_elementwise.o"
+	@echo "... Op_elementwise.i"
+	@echo "... Op_elementwise.s"
+	@echo "... Op_map.o"
+	@echo "... Op_map.i"
+	@echo "... Op_map.s"
+	@echo "... Op_matmul.o"
+	@echo "... Op_matmul.i"
+	@echo "... Op_matmul.s"
+	@echo "... Op_reduce.o"
+	@echo "... Op_reduce.i"
+	@echo "... Op_reduce.s"
+	@echo "... Operators.o"
+	@echo "... Operators.i"
+	@echo "... Operators.s"
 	@echo "... Tensor.o"
 	@echo "... Tensor.i"
 	@echo "... Tensor.s"
+	@echo "... compute_graph.o"
+	@echo "... compute_graph.i"
+	@echo "... compute_graph.s"
+	@echo "... kernel_elementwise.o"
+	@echo "... kernel_elementwise.i"
+	@echo "... kernel_elementwise.s"
+	@echo "... kernel_map.o"
+	@echo "... kernel_map.i"
+	@echo "... kernel_map.s"
+	@echo "... l1loss.o"
+	@echo "... l1loss.i"
+	@echo "... l1loss.s"
+	@echo "... network.o"
+	@echo "... network.i"
+	@echo "... network.s"
 .PHONY : help
 
 

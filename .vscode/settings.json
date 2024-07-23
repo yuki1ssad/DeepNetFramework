@@ -51,6 +51,7 @@
         "map": "cpp",
         "set": "cpp",
         "iomanip": "cpp",
-        "cassert": "cpp"
+        "cassert": "cpp",
+        "unordered_set": "cpp"
     }
 }

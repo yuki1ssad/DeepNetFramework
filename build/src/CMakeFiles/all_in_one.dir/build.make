@@ -72,11 +72,86 @@ include src/CMakeFiles/all_in_one.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/all_in_one.dir/flags.make
 
+src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o: src/CMakeFiles/all_in_one.dir/flags.make
+src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o: src/CMakeFiles/all_in_one.dir/includes_CUDA.rsp
+src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o: /home/wangxuefei/workspace/DeepNetFramework/src/Op_elementwise.cu
+src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o: src/CMakeFiles/all_in_one.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o"
+	cd /home/wangxuefei/workspace/DeepNetFramework/build/src && /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o -MF CMakeFiles/all_in_one.dir/Op_elementwise.cu.o.d -x cu -c /home/wangxuefei/workspace/DeepNetFramework/src/Op_elementwise.cu -o CMakeFiles/all_in_one.dir/Op_elementwise.cu.o
+
+src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/all_in_one.dir/Op_elementwise.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/all_in_one.dir/Op_elementwise.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+src/CMakeFiles/all_in_one.dir/Op_map.cu.o: src/CMakeFiles/all_in_one.dir/flags.make
+src/CMakeFiles/all_in_one.dir/Op_map.cu.o: src/CMakeFiles/all_in_one.dir/includes_CUDA.rsp
+src/CMakeFiles/all_in_one.dir/Op_map.cu.o: /home/wangxuefei/workspace/DeepNetFramework/src/Op_map.cu
+src/CMakeFiles/all_in_one.dir/Op_map.cu.o: src/CMakeFiles/all_in_one.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object src/CMakeFiles/all_in_one.dir/Op_map.cu.o"
+	cd /home/wangxuefei/workspace/DeepNetFramework/build/src && /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/all_in_one.dir/Op_map.cu.o -MF CMakeFiles/all_in_one.dir/Op_map.cu.o.d -x cu -c /home/wangxuefei/workspace/DeepNetFramework/src/Op_map.cu -o CMakeFiles/all_in_one.dir/Op_map.cu.o
+
+src/CMakeFiles/all_in_one.dir/Op_map.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/all_in_one.dir/Op_map.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/all_in_one.dir/Op_map.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/all_in_one.dir/Op_map.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o: src/CMakeFiles/all_in_one.dir/flags.make
+src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o: src/CMakeFiles/all_in_one.dir/includes_CUDA.rsp
+src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o: /home/wangxuefei/workspace/DeepNetFramework/src/Op_matmul.cu
+src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o: src/CMakeFiles/all_in_one.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CUDA object src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o"
+	cd /home/wangxuefei/workspace/DeepNetFramework/build/src && /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o -MF CMakeFiles/all_in_one.dir/Op_matmul.cu.o.d -x cu -c /home/wangxuefei/workspace/DeepNetFramework/src/Op_matmul.cu -o CMakeFiles/all_in_one.dir/Op_matmul.cu.o
+
+src/CMakeFiles/all_in_one.dir/Op_matmul.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/all_in_one.dir/Op_matmul.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/all_in_one.dir/Op_matmul.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/all_in_one.dir/Op_matmul.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o: src/CMakeFiles/all_in_one.dir/flags.make
+src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o: src/CMakeFiles/all_in_one.dir/includes_CUDA.rsp
+src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o: /home/wangxuefei/workspace/DeepNetFramework/src/Op_reduce.cu
+src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o: src/CMakeFiles/all_in_one.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CUDA object src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o"
+	cd /home/wangxuefei/workspace/DeepNetFramework/build/src && /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o -MF CMakeFiles/all_in_one.dir/Op_reduce.cu.o.d -x cu -c /home/wangxuefei/workspace/DeepNetFramework/src/Op_reduce.cu -o CMakeFiles/all_in_one.dir/Op_reduce.cu.o
+
+src/CMakeFiles/all_in_one.dir/Op_reduce.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/all_in_one.dir/Op_reduce.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/all_in_one.dir/Op_reduce.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/all_in_one.dir/Op_reduce.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+src/CMakeFiles/all_in_one.dir/Operators.cu.o: src/CMakeFiles/all_in_one.dir/flags.make
+src/CMakeFiles/all_in_one.dir/Operators.cu.o: src/CMakeFiles/all_in_one.dir/includes_CUDA.rsp
+src/CMakeFiles/all_in_one.dir/Operators.cu.o: /home/wangxuefei/workspace/DeepNetFramework/src/Operators.cu
+src/CMakeFiles/all_in_one.dir/Operators.cu.o: src/CMakeFiles/all_in_one.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CUDA object src/CMakeFiles/all_in_one.dir/Operators.cu.o"
+	cd /home/wangxuefei/workspace/DeepNetFramework/build/src && /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/all_in_one.dir/Operators.cu.o -MF CMakeFiles/all_in_one.dir/Operators.cu.o.d -x cu -c /home/wangxuefei/workspace/DeepNetFramework/src/Operators.cu -o CMakeFiles/all_in_one.dir/Operators.cu.o
+
+src/CMakeFiles/all_in_one.dir/Operators.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/all_in_one.dir/Operators.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/all_in_one.dir/Operators.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/all_in_one.dir/Operators.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 src/CMakeFiles/all_in_one.dir/Tensor.cu.o: src/CMakeFiles/all_in_one.dir/flags.make
 src/CMakeFiles/all_in_one.dir/Tensor.cu.o: src/CMakeFiles/all_in_one.dir/includes_CUDA.rsp
 src/CMakeFiles/all_in_one.dir/Tensor.cu.o: /home/wangxuefei/workspace/DeepNetFramework/src/Tensor.cu
 src/CMakeFiles/all_in_one.dir/Tensor.cu.o: src/CMakeFiles/all_in_one.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object src/CMakeFiles/all_in_one.dir/Tensor.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CUDA object src/CMakeFiles/all_in_one.dir/Tensor.cu.o"
 	cd /home/wangxuefei/workspace/DeepNetFramework/build/src && /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/all_in_one.dir/Tensor.cu.o -MF CMakeFiles/all_in_one.dir/Tensor.cu.o.d -x cu -c /home/wangxuefei/workspace/DeepNetFramework/src/Tensor.cu -o CMakeFiles/all_in_one.dir/Tensor.cu.o
 
 src/CMakeFiles/all_in_one.dir/Tensor.cu.i: cmake_force
@@ -87,14 +162,109 @@ src/CMakeFiles/all_in_one.dir/Tensor.cu.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/all_in_one.dir/Tensor.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+src/CMakeFiles/all_in_one.dir/compute_graph.cu.o: src/CMakeFiles/all_in_one.dir/flags.make
+src/CMakeFiles/all_in_one.dir/compute_graph.cu.o: src/CMakeFiles/all_in_one.dir/includes_CUDA.rsp
+src/CMakeFiles/all_in_one.dir/compute_graph.cu.o: /home/wangxuefei/workspace/DeepNetFramework/src/compute_graph.cu
+src/CMakeFiles/all_in_one.dir/compute_graph.cu.o: src/CMakeFiles/all_in_one.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CUDA object src/CMakeFiles/all_in_one.dir/compute_graph.cu.o"
+	cd /home/wangxuefei/workspace/DeepNetFramework/build/src && /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/all_in_one.dir/compute_graph.cu.o -MF CMakeFiles/all_in_one.dir/compute_graph.cu.o.d -x cu -c /home/wangxuefei/workspace/DeepNetFramework/src/compute_graph.cu -o CMakeFiles/all_in_one.dir/compute_graph.cu.o
+
+src/CMakeFiles/all_in_one.dir/compute_graph.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/all_in_one.dir/compute_graph.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/all_in_one.dir/compute_graph.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/all_in_one.dir/compute_graph.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o: src/CMakeFiles/all_in_one.dir/flags.make
+src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o: src/CMakeFiles/all_in_one.dir/includes_CUDA.rsp
+src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o: /home/wangxuefei/workspace/DeepNetFramework/src/kernel_elementwise.cu
+src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o: src/CMakeFiles/all_in_one.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CUDA object src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o"
+	cd /home/wangxuefei/workspace/DeepNetFramework/build/src && /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o -MF CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o.d -x cu -c /home/wangxuefei/workspace/DeepNetFramework/src/kernel_elementwise.cu -o CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o
+
+src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/all_in_one.dir/kernel_elementwise.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/all_in_one.dir/kernel_elementwise.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+src/CMakeFiles/all_in_one.dir/kernel_map.cu.o: src/CMakeFiles/all_in_one.dir/flags.make
+src/CMakeFiles/all_in_one.dir/kernel_map.cu.o: src/CMakeFiles/all_in_one.dir/includes_CUDA.rsp
+src/CMakeFiles/all_in_one.dir/kernel_map.cu.o: /home/wangxuefei/workspace/DeepNetFramework/src/kernel_map.cu
+src/CMakeFiles/all_in_one.dir/kernel_map.cu.o: src/CMakeFiles/all_in_one.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CUDA object src/CMakeFiles/all_in_one.dir/kernel_map.cu.o"
+	cd /home/wangxuefei/workspace/DeepNetFramework/build/src && /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/all_in_one.dir/kernel_map.cu.o -MF CMakeFiles/all_in_one.dir/kernel_map.cu.o.d -x cu -c /home/wangxuefei/workspace/DeepNetFramework/src/kernel_map.cu -o CMakeFiles/all_in_one.dir/kernel_map.cu.o
+
+src/CMakeFiles/all_in_one.dir/kernel_map.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/all_in_one.dir/kernel_map.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/all_in_one.dir/kernel_map.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/all_in_one.dir/kernel_map.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+src/CMakeFiles/all_in_one.dir/l1loss.cu.o: src/CMakeFiles/all_in_one.dir/flags.make
+src/CMakeFiles/all_in_one.dir/l1loss.cu.o: src/CMakeFiles/all_in_one.dir/includes_CUDA.rsp
+src/CMakeFiles/all_in_one.dir/l1loss.cu.o: /home/wangxuefei/workspace/DeepNetFramework/src/l1loss.cu
+src/CMakeFiles/all_in_one.dir/l1loss.cu.o: src/CMakeFiles/all_in_one.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CUDA object src/CMakeFiles/all_in_one.dir/l1loss.cu.o"
+	cd /home/wangxuefei/workspace/DeepNetFramework/build/src && /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/all_in_one.dir/l1loss.cu.o -MF CMakeFiles/all_in_one.dir/l1loss.cu.o.d -x cu -c /home/wangxuefei/workspace/DeepNetFramework/src/l1loss.cu -o CMakeFiles/all_in_one.dir/l1loss.cu.o
+
+src/CMakeFiles/all_in_one.dir/l1loss.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/all_in_one.dir/l1loss.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/all_in_one.dir/l1loss.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/all_in_one.dir/l1loss.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+src/CMakeFiles/all_in_one.dir/network.cu.o: src/CMakeFiles/all_in_one.dir/flags.make
+src/CMakeFiles/all_in_one.dir/network.cu.o: src/CMakeFiles/all_in_one.dir/includes_CUDA.rsp
+src/CMakeFiles/all_in_one.dir/network.cu.o: /home/wangxuefei/workspace/DeepNetFramework/src/network.cu
+src/CMakeFiles/all_in_one.dir/network.cu.o: src/CMakeFiles/all_in_one.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CUDA object src/CMakeFiles/all_in_one.dir/network.cu.o"
+	cd /home/wangxuefei/workspace/DeepNetFramework/build/src && /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/all_in_one.dir/network.cu.o -MF CMakeFiles/all_in_one.dir/network.cu.o.d -x cu -c /home/wangxuefei/workspace/DeepNetFramework/src/network.cu -o CMakeFiles/all_in_one.dir/network.cu.o
+
+src/CMakeFiles/all_in_one.dir/network.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/all_in_one.dir/network.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/all_in_one.dir/network.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/all_in_one.dir/network.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 # Object files for target all_in_one
 all_in_one_OBJECTS = \
-"CMakeFiles/all_in_one.dir/Tensor.cu.o"
+"CMakeFiles/all_in_one.dir/Op_elementwise.cu.o" \
+"CMakeFiles/all_in_one.dir/Op_map.cu.o" \
+"CMakeFiles/all_in_one.dir/Op_matmul.cu.o" \
+"CMakeFiles/all_in_one.dir/Op_reduce.cu.o" \
+"CMakeFiles/all_in_one.dir/Operators.cu.o" \
+"CMakeFiles/all_in_one.dir/Tensor.cu.o" \
+"CMakeFiles/all_in_one.dir/compute_graph.cu.o" \
+"CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o" \
+"CMakeFiles/all_in_one.dir/kernel_map.cu.o" \
+"CMakeFiles/all_in_one.dir/l1loss.cu.o" \
+"CMakeFiles/all_in_one.dir/network.cu.o"
 
 # External object files for target all_in_one
 all_in_one_EXTERNAL_OBJECTS =
 
+src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o
+src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/Op_map.cu.o
+src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o
+src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o
+src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/Operators.cu.o
 src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/Tensor.cu.o
+src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/compute_graph.cu.o
+src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o
+src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/kernel_map.cu.o
+src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/l1loss.cu.o
+src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/network.cu.o
 src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/build.make
 src/liball_in_one.so: /usr/lib/x86_64-linux-gnu/libz.so
 src/liball_in_one.so: /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.so
@@ -102,7 +272,7 @@ src/liball_in_one.so: /usr/lib/x86_64-linux-gnu/libpthread.so
 src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/linkLibs.rsp
 src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/objects1.rsp
 src/liball_in_one.so: src/CMakeFiles/all_in_one.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CUDA shared library liball_in_one.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CUDA shared library liball_in_one.so"
 	cd /home/wangxuefei/workspace/DeepNetFramework/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/all_in_one.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

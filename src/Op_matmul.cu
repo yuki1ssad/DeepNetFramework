@@ -1,5 +1,3 @@
-#pragma once
-
 #include "Op_matmul.h"
 
 std::string Op_matmul::typeStr()
@@ -29,13 +27,13 @@ void Op_matmul::forward()
         (_intensors[0]->_shape[0] + BLOCK.y - 1) / BLOCK.y
     );
     size_t sharedMem = BLOCK.x * BLOCK.y * sizeof(float) * 2;
-    kmatmulGPUSharedMem<<<GRID, BLOCK, sharedMem, _cudaStream>>>(
+    kmatmulNaive<<<GRID, BLOCK, sharedMem, _cudaStream>>>(
         _intensors[0]->_pdata,
         _intensors[1]->_pdata,
         _outtensors[0]->_pdata,
         _intensors[0]->_shape[0],
         _intensors[0]->_shape[1],
-        _intensors[1]->_shape[1],
+        _intensors[1]->_shape[1]
     );
     cudaDeviceSynchronize();
     std::cout << "Op_matmul forward" << std::endl;
@@ -54,7 +52,7 @@ void Op_matmul::backward()
     }
 
     dim3 BLOCK, GRID;
-    size_t sharedMem
+    size_t sharedMem;
 
     // A @ B = C
     // cal grad of A
@@ -67,7 +65,7 @@ void Op_matmul::backward()
 
     auto transB = _intensors[1]->_pdata;
     ktranspose<<<GRID, BLOCK, sharedMem, _cudaStream>>>(_intensors[1]->_pdata, transB, _intensors[1]->_shape[0], _intensors[1]->_shape[1]);
-    kmatmulGPUSharedMem<<<GRID, BLOCK, sharedMem, _cudaStream>>>(
+    kmatmulNaive<<<GRID, BLOCK, sharedMem, _cudaStream>>>(
         _outtensors[0]->_pgradient,
         transB,
         _intensors[0]->_pgradient,
@@ -87,7 +85,7 @@ void Op_matmul::backward()
 
     auto transA = _intensors[0]->_pdata;
     ktranspose<<<GRID, BLOCK, sharedMem, _cudaStream>>>(_intensors[0]->_pdata, transA, _intensors[0]->_shape[0], _intensors[0]->_shape[1]);
-    kmatmulGPUSharedMem<<<GRID, BLOCK, sharedMem, _cudaStream>>>(
+    kmatmulNaive<<<GRID, BLOCK, sharedMem, _cudaStream>>>(
         transA,
         _outtensors[0]->_pgradient,
         _intensors[1]->_pgradient,

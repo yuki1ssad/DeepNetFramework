@@ -39,7 +39,7 @@ __global__ void kreduceSum(size_t totalNum, size_t currentNum, T* In, T* Out)
 }
 
 template <class DATATYPE>
-__inlene__ __device__
+__inline__ __device__
 DATATYPE warpReduceSum(DATATYPE val)
 {
     for (unsigned int step = warpSize / 2; step > 0; step >> 1) {
@@ -49,7 +49,7 @@ DATATYPE warpReduceSum(DATATYPE val)
 }
 
 template <class DATATYPE>
-__inlene__ __device__
+__inline__ __device__
 DATATYPE blockReduceSum(DATATYPE val)
 {
     val = warpReduceSum(val);
@@ -74,7 +74,7 @@ __global__ void kreduceSumShfl(DATATYPE* In, DATATYPE* Out, size_t N)
 {
     DATATYPE val = 0;
     for (size_t i = blockIdx.x * blockDim.x + threadIdx.x; i < N; i += gridDim.x * blockDim.x) {
-        val += (i < N) ? I[i] : 0;
+        val += (i < N) ? In[i] : 0;
     }
     val = blockReduceSum(val);
     if (threadIdx.x == 0) {
@@ -108,7 +108,7 @@ __global__ void kreduceSumBlockshflAtom(DATATYPE* In, DATATYPE* Out, size_t N)
     }
 }
 
-template<class DATATYPE, class DATATYPE>
+template<class DATATYPE, class DATATYPE4>
 __global__ void kreduceSumVec4BlockshflAtom(DATATYPE* In, DATATYPE* Out, size_t N)
 {
     DATATYPE val = 0;
@@ -128,7 +128,7 @@ __global__ void kreduceSumVec4BlockshflAtom(DATATYPE* In, DATATYPE* Out, size_t 
     }
 }
 
-template<class DATATYPE, class DATATYPE>
+template<class DATATYPE, class DATATYPE4>
 __global__ void kreduceSumVec4WarpshflAtom(DATATYPE* In, DATATYPE* Out, size_t N)
 {
     DATATYPE val = 0;

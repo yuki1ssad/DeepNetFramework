@@ -32,7 +32,7 @@ void Op_reduce::forward()
     cudaMalloc(&workSpace, _intensors[0]->_totalSize);
     cudaMemcpyAsync(workSpace, _intensors[0]->_pdata, _intensors[0]->_totalSize, cudaMemcpyDeviceToDevice, _cudaStream);
     while (workNum != 1) {
-        GRID = ceil(max(workNum, BLOCK.x * 2) / (BLOCK.X * 2));
+        GRID = ceil((float)max(int(workNum), BLOCK.x * 2) / (BLOCK.x * 2));
         kreduceSum<<<GRID, BLOCK, sharedMem, _cudaStream>>>(
             _intensors[0]->_elementCount,
             workNum,

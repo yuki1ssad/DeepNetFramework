@@ -5,10 +5,12 @@
 #include <cstring>  // memcpy
 #include <random>   // std::random_device ...
 #include <iomanip>  // 包含setprecision
+#include <map>
 
 #include <cuda_runtime.h>
 
 #include "Operators.h"
+#include "kernel_elementwise.h"
 
 class Operators;
 
@@ -43,6 +45,7 @@ public:
     void allocMem();
     void to(cudaMemoryType targetMemType);
     void fillDataRandom(float lower_bound, float upper_bound);
+    void mirror(const std::map<Tensor*, Tensor*>& tensorMap, const std::map<Operators*, Operators*>& opMap);
     void updateWeights(float alpha, cudaStream_t cudastream);
     friend std::ostream &operator<<(std::ostream& os, Tensor& tensor);
 };

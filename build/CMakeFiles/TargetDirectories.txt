@@ -8,6 +8,10 @@
 /home/wangxuefei/workspace/DeepNetFramework/build/tests/CMakeFiles/test.dir
 /home/wangxuefei/workspace/DeepNetFramework/build/tests/CMakeFiles/edit_cache.dir
 /home/wangxuefei/workspace/DeepNetFramework/build/tests/CMakeFiles/rebuild_cache.dir
+/home/wangxuefei/workspace/DeepNetFramework/build/tests/test_network/CMakeFiles/test_network.dir
+/home/wangxuefei/workspace/DeepNetFramework/build/tests/test_network/CMakeFiles/test.dir
+/home/wangxuefei/workspace/DeepNetFramework/build/tests/test_network/CMakeFiles/edit_cache.dir
+/home/wangxuefei/workspace/DeepNetFramework/build/tests/test_network/CMakeFiles/rebuild_cache.dir
 /home/wangxuefei/workspace/DeepNetFramework/build/tests/test_tensor/CMakeFiles/test_tensor.dir
 /home/wangxuefei/workspace/DeepNetFramework/build/tests/test_tensor/CMakeFiles/test.dir
 /home/wangxuefei/workspace/DeepNetFramework/build/tests/test_tensor/CMakeFiles/edit_cache.dir

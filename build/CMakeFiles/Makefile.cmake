@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.26.4/CMakeSystem.cmake"
   "/home/wangxuefei/workspace/DeepNetFramework/src/CMakeLists.txt"
   "/home/wangxuefei/workspace/DeepNetFramework/tests/CMakeLists.txt"
+  "/home/wangxuefei/workspace/DeepNetFramework/tests/test_network/CMakeLists.txt"
   "/home/wangxuefei/workspace/DeepNetFramework/tests/test_tensor/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/gflags/gflags-config-version.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/gflags/gflags-config.cmake"
@@ -144,11 +145,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/test_network/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/test_tensor/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/all_in_one.dir/DependInfo.cmake"
+  "tests/test_network/CMakeFiles/test_network.dir/DependInfo.cmake"
   "tests/test_tensor/CMakeFiles/test_tensor.dir/DependInfo.cmake"
   )

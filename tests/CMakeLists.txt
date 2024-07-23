@@ -9,6 +9,6 @@ find_package(GTest REQUIRED)
 
 # add_subdirectory(test_operators)
 # add_subdirectory(test_utils)
-# add_subdirectory(test_network)
+add_subdirectory(test_network)
 add_subdirectory(test_tensor)
 # add_subdirectory(test_kernels)

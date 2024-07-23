@@ -1,5 +1,3 @@
-#pragma once
-
 #include "Operators.h"
 
 
@@ -7,21 +5,21 @@ Operators::Operators(std::vector<Tensor*> intensors, std::vector<Tensor*> outten
     _intensors(intensors),
     _outtensors(outtensors)
 {
-    for (auto t : intensors) {
-        t->to.push_back(this);
-        if (t->pfrom) {
+    for (auto t : _intensors) {
+        t->_to.push_back(this);
+        if (t->_pfrom) {
             t->_pfrom->_nextOps[this] = true;
             _preOps[t->_pfrom] = true;
         }
     }
 
-    for (auto t : outtensors) {
+    for (auto t : _outtensors) {
         t->_pfrom = this;
     }
 }
 
 
-virtual void Operators::mirror(const std::map<Tensor*, Tensor*>& tensorMap, const std::map<Operators*, Operators*>& opMap)
+void Operators::mirror(const std::map<Tensor*, Tensor*>& tensorMap, const std::map<Operators*, Operators*>& opMap)
 {
     for (auto t : _intensors) {
         opMap.at(this)->_intensors.push_back(tensorMap.at(t));
@@ -43,13 +41,17 @@ virtual void Operators::mirror(const std::map<Tensor*, Tensor*>& tensorMap, cons
 }
 
 
-virtual int Operators::indegree()
+int Operators::indegree()
 {
     int inds = 0;
     for (auto p : _preOps) {
         inds += p.second;
     }
     return inds;
+}
+
+void Operators::setcudaStream(cudaStream_t cudaStream) {
+    _cudaStream = cudaStream;
 }
 
 

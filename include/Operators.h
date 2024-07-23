@@ -4,6 +4,8 @@
 #include <string>
 #include <map>
 
+class Tensor;
+
 class Operators
 {
 public:
@@ -31,7 +33,7 @@ public:
 
     virtual void mirror(const std::map<Tensor*, Tensor*>& tensorMap, const std::map<Operators*, Operators*>& opMap);
     virtual int indegree();
-    virtual void setcudaStream(cudaStream_t cudaStream) : _cudaStream(cudaStream) {}
+    virtual void setcudaStream(cudaStream_t cudaStream);
 
     virtual std::string typeStr() = 0;
     virtual Operators* copy() = 0;

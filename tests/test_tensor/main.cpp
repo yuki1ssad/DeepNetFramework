@@ -11,3 +11,4 @@ int main(int argc, char **argv) {
 }
 
 // rm -rf * && cmake .. -DCMAKE_VERBOSE_MAKEFILE=on && make
+// rm -rf * && cmake .. && make
