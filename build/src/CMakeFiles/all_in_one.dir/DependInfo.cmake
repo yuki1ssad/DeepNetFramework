@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/wangxuefei/workspace/DeepNetFramework/src/kernel_map.cu" "src/CMakeFiles/all_in_one.dir/kernel_map.cu.o" "gcc" "src/CMakeFiles/all_in_one.dir/kernel_map.cu.o.d"
   "/home/wangxuefei/workspace/DeepNetFramework/src/l1loss.cu" "src/CMakeFiles/all_in_one.dir/l1loss.cu.o" "gcc" "src/CMakeFiles/all_in_one.dir/l1loss.cu.o.d"
   "/home/wangxuefei/workspace/DeepNetFramework/src/network.cu" "src/CMakeFiles/all_in_one.dir/network.cu.o" "gcc" "src/CMakeFiles/all_in_one.dir/network.cu.o.d"
+  "/home/wangxuefei/workspace/DeepNetFramework/src/tools_cuda.cu" "src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o" "gcc" "src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

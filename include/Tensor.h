@@ -11,6 +11,8 @@
 
 #include "Operators.h"
 #include "kernel_elementwise.h"
+#include "kernels.h"
+#include "tools_cuda.h"
 
 class Operators;
 

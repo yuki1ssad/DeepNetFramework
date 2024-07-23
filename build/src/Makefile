@@ -407,6 +407,30 @@ network.cu.s:
 	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/network.cu.s
 .PHONY : network.cu.s
 
+tools_cuda.o: tools_cuda.cu.o
+.PHONY : tools_cuda.o
+
+# target to build an object file
+tools_cuda.cu.o:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o
+.PHONY : tools_cuda.cu.o
+
+tools_cuda.i: tools_cuda.cu.i
+.PHONY : tools_cuda.i
+
+# target to preprocess a source file
+tools_cuda.cu.i:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/tools_cuda.cu.i
+.PHONY : tools_cuda.cu.i
+
+tools_cuda.s: tools_cuda.cu.s
+.PHONY : tools_cuda.s
+
+# target to generate assembly for a file
+tools_cuda.cu.s:
+	cd /home/wangxuefei/workspace/DeepNetFramework/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/tools_cuda.cu.s
+.PHONY : tools_cuda.cu.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -450,6 +474,9 @@ help:
 	@echo "... network.o"
 	@echo "... network.i"
 	@echo "... network.s"
+	@echo "... tools_cuda.o"
+	@echo "... tools_cuda.i"
+	@echo "... tools_cuda.s"
 .PHONY : help
 
 

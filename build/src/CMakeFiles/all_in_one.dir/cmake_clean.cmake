@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/all_in_one.dir/l1loss.cu.o.d"
   "CMakeFiles/all_in_one.dir/network.cu.o"
   "CMakeFiles/all_in_one.dir/network.cu.o.d"
+  "CMakeFiles/all_in_one.dir/tools_cuda.cu.o"
+  "CMakeFiles/all_in_one.dir/tools_cuda.cu.o.d"
   "liball_in_one.pdb"
   "liball_in_one.so"
 )

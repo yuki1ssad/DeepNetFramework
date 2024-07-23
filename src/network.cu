@@ -57,9 +57,10 @@ std::vector<Tensor*> Network::forward(std::vector<Tensor*>& inputs)
 {
     assert(_inputTensors.size() == inputs.size());
     for (int i = 0; i < _inputTensors.size(); ++i) {
-        *_inputTensors[i] = *inputs[i];
+        // inputs[i]->to(cudaMemoryTypeDevice);
+        _inputTensors[i] = inputs[i];
     }
-
+    
     for (Operators* op : getOpSeqs()) {
         op->forward();
     }

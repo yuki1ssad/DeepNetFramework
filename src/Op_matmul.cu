@@ -21,9 +21,10 @@ void Op_matmul::inferShape()
 
 void Op_matmul::forward()
 {
-    dim3 BLOCK(16, 16);
+    // dim3 BLOCK(16, 16);
+    dim3 BLOCK(2, 2);
     dim3 GRID(
-        (_intensors[0]->_shape[1] + BLOCK.x - 1) / BLOCK.x,
+        (_intensors[1]->_shape[1] + BLOCK.x - 1) / BLOCK.x,
         (_intensors[0]->_shape[0] + BLOCK.y - 1) / BLOCK.y
     );
     size_t sharedMem = BLOCK.x * BLOCK.y * sizeof(float) * 2;

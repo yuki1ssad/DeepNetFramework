@@ -1,0 +1,117 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(cuda-gdb) Launch test_kernels",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/tests/test_kernels/test_kernels",
+            "preLaunchTask": "build debug",
+            "args": "--logtostderr=1 --minloglevel=0 --v=8 --gtest_filter=*test_matmul.positive*",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": []
+        },
+        {
+            "name": "(gdb) Launch test_kernels",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/tests/test_kernels/test_kernels",
+            "preLaunchTask": "build debug",
+            "args": [
+                "--logtostderr=1",
+                "--minloglevel=0",
+                "--v=6",
+                // design exhaustive_combine exhaustive_combine_lite test_reduce test_matmul
+                "--gtest_filter=design/test_matmul.positive/*"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "(cuda-gdb) Launch test_network",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}//build/tests/test_network/test_network",
+            "preLaunchTask": "build debug",
+            // "args": "--logtostderr=1 --minloglevel=0 --v=8",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": []
+        },
+        {
+            "name": "(gdb) Launch test_network",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/tests/test_network/test_network",
+            "preLaunchTask": "build debug",
+            "args": [
+                // "--logtostderr=1",
+                // "--minloglevel=0",
+                // "--v=6"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "(gdb) Launch test_tensor",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/tests/test_tensor/test_tensor",
+            "preLaunchTask": "cmake build v2",
+            "args": [
+                "--logtostderr=1",
+                "--minloglevel=0",
+                "--v=9",
+                "--my_param=12"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

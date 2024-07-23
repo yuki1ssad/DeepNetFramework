@@ -61,9 +61,9 @@ void ComputeGraph::copy(std::vector<Tensor*>& inputTensors, std::vector<Tensor*>
     }
 
     for (Tensor* w_t : _weightTensors) {
-        Tensor* copyed_t = new Tensor(*w_t);
-        inputTensors.push_back(copyed_t);
-        tensorMapOn[w_t] = copyed_t;
+        Tensor* copyed_wt = new Tensor(*w_t);
+        weightTensors.push_back(copyed_wt);
+        tensorMapOn[w_t] = copyed_wt;
     }
 
     for (Operators* op : getOpSeqs()) {

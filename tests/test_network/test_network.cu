@@ -15,10 +15,10 @@ TEST(perceptron, matmul_WX) {
     ComputeGraph* mm_graph = new ComputeGraph();
     mm_graph->_inputTensors.push_back(new Tensor());
     mm_graph->_weightTensors.push_back(new Tensor({2, 2}));
-    new Op_matmul(mm_graph->_weightTensors[0], mm_graph->_inputTensors[0]);
+    new Op_matmul(mm_graph->_inputTensors[0], mm_graph->_weightTensors[0]);
 
-    Tensor *input = new Tensor({2, 1});
-    Tensor *target = new Tensor({2, 1});
+    Tensor *input = new Tensor({1, 2});
+    Tensor *target = new Tensor({1, 2});
 
     Network mm_net(mm_graph, cudaStreamDefault);
     mm_net.to(cudaMemoryTypeDevice);
@@ -38,18 +38,23 @@ TEST(perceptron, matmul_WX) {
         target->_pdata[1] = input->_pdata[0] - input->_pdata[1];
 
         // std::cout << "input" << *input;
+        input->to(cudaMemoryTypeDevice);
         std::vector<Tensor*> in{input};
+        // mm_net._weightTensors[0]->to(cudaMemoryTypeHost);
+        // input->to(cudaMemoryTypeHost);
         std::vector<Tensor*> predict = mm_net.forward(in);
         // std::cout << "target" << *target;
         // std::cout << "predict" << *predict[0];
 
+        // predict[0]->to(cudaMemoryTypeHost);
+        target->to(cudaMemoryTypeDevice);
         std::vector<Tensor*> pre_target{predict[0], target};
         std::vector<Tensor*> loss = l1loss.forward(pre_target);
 
         std::cout << "loss: " << *loss[0];
 
         l1loss.backward();
-        *mm_net.getOutputTensors()[0] = *l1loss._inputTensors[0];
+        mm_net.getOutputTensors()[0] = l1loss._inputTensors[0];
         mm_net.backward();
 
         mm_net.updateWeights(0.01);

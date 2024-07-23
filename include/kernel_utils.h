@@ -28,6 +28,7 @@ __global__ void kinitializeRandom(T* data, size_t N, T lower_bound, T upper_boun
         curandState state;
         curand_init(clock64(), tid, 0, &state);
         data[tid] = curand_uniform(&state) * (upper_bound - lower_bound) - lower_bound;
+        printf("data[%d] = %.2f\n", tid, data[tid]);
     }
 }
 

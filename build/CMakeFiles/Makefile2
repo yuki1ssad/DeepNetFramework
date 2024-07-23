@@ -150,12 +150,12 @@ tests/test_tensor/clean: tests/test_tensor/CMakeFiles/test_tensor.dir/clean
 src/CMakeFiles/all_in_one.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/all_in_one.dir/build.make src/CMakeFiles/all_in_one.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target all_in_one"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target all_in_one"
 .PHONY : src/CMakeFiles/all_in_one.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/all_in_one.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/all_in_one.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/all_in_one.dir/rule
@@ -176,12 +176,12 @@ src/CMakeFiles/all_in_one.dir/clean:
 tests/test_network/CMakeFiles/test_network.dir/all: src/CMakeFiles/all_in_one.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/test_network/CMakeFiles/test_network.dir/build.make tests/test_network/CMakeFiles/test_network.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/test_network/CMakeFiles/test_network.dir/build.make tests/test_network/CMakeFiles/test_network.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=13,14,15 "Built target test_network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=14,15,16 "Built target test_network"
 .PHONY : tests/test_network/CMakeFiles/test_network.dir/all
 
 # Build rule for subdir invocation for target.
 tests/test_network/CMakeFiles/test_network.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test_network/CMakeFiles/test_network.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles 0
 .PHONY : tests/test_network/CMakeFiles/test_network.dir/rule
@@ -202,12 +202,12 @@ tests/test_network/CMakeFiles/test_network.dir/clean:
 tests/test_tensor/CMakeFiles/test_tensor.dir/all: src/CMakeFiles/all_in_one.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/test_tensor/CMakeFiles/test_tensor.dir/build.make tests/test_tensor/CMakeFiles/test_tensor.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/test_tensor/CMakeFiles/test_tensor.dir/build.make tests/test_tensor/CMakeFiles/test_tensor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=16,17,18 "Built target test_tensor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=17,18,19 "Built target test_tensor"
 .PHONY : tests/test_tensor/CMakeFiles/test_tensor.dir/all
 
 # Build rule for subdir invocation for target.
 tests/test_tensor/CMakeFiles/test_tensor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test_tensor/CMakeFiles/test_tensor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles 0
 .PHONY : tests/test_tensor/CMakeFiles/test_tensor.dir/rule

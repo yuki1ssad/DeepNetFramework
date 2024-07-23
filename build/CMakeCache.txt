@@ -22,7 +22,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
+CMAKE_BUILD_TYPE:STRING=debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -342,6 +342,12 @@ CUDA_nvToolsExt_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnvToolsExt.so
 
 //Path to a library.
 CUDA_rt_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
+
+//No help, variable specified on the command line.
+DEBUG:UNINITIALIZED=1
+
+//No help, variable specified on the command line.
+ENABLE_PRECOMPILED_HEADERS:UNINITIALIZED=OFF
 
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/home/wangxuefei/workspace/DeepNetFramework/build/_deps

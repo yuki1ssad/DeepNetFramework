@@ -1,5 +1,4 @@
 #include "Tensor.h"
-#include "kernels.h"
 
 std::vector<size_t> Tensor::show_elements = {64, 64, 3, 1};
 
@@ -26,8 +25,8 @@ Tensor::Tensor(std::vector<size_t> shape, cudaMemoryType memType, float* data) :
             memcpy(_pdata, data, _totalSize);
         }
     } else if (memType == cudaMemoryTypeDevice) {
-        cudaMalloc(&_pdata, _totalSize);
-        cudaMalloc(&_pgradient, _totalSize);
+        checkCudaErrors(cudaMalloc(&_pdata, _totalSize));
+        checkCudaErrors(cudaMalloc(&_pgradient, _totalSize));
         if (data) {
             cudaMemcpy(_pdata, data, _totalSize, cudaMemcpyHostToDevice);
         }
@@ -223,10 +222,10 @@ void Tensor::allocMem()
             _pgradient[i] = 0.f;
         }
     } else if (_dataMemType == cudaMemoryTypeDevice) {
-        cudaFree(_pdata);
-        cudaFree(_pgradient);
-        cudaMalloc(&_pdata, _totalSize);
-        cudaMalloc(&_pgradient, _totalSize);
+        checkCudaErrors(cudaFree(_pdata));
+        checkCudaErrors(cudaFree(_pgradient));
+        checkCudaErrors(cudaMalloc(&_pdata, _totalSize));
+        checkCudaErrors(cudaMalloc(&_pgradient, _totalSize));
         dim3 BLOCK(_elementCount < 1024 ? _elementCount : 1024);
         dim3 GRID(max((int)_elementCount, 1024) /  + 1);
         kmemset<<<GRID, BLOCK>>>(
@@ -246,11 +245,11 @@ void Tensor::to(cudaMemoryType targetMemType)
     }
 
     float* tmp = nullptr;
-    if (_dataMemType == cudaMemoryTypeHost) {
+    if (targetMemType == cudaMemoryTypeHost) {
         if (_pdata) {
             tmp = new float[_elementCount];
-            cudaMemcpy(tmp, _pdata, _totalSize, cudaMemcpyDeviceToHost);
-            cudaFree(_pdata);
+            checkCudaErrors(cudaMemcpy(tmp, _pdata, _totalSize, cudaMemcpyDeviceToHost));
+            checkCudaErrors(cudaFree(_pdata));
             _pdata = tmp;
         } else {
             std::cout << "Move tensor with pullptr _pdata!" << std::endl;
@@ -258,26 +257,26 @@ void Tensor::to(cudaMemoryType targetMemType)
 
         if (_pgradient) {
             tmp = new float[_elementCount];
-            cudaMemcpy(tmp, _pgradient, _totalSize, cudaMemcpyDeviceToHost);
-            cudaFree(_pgradient);
+            checkCudaErrors(cudaMemcpy(tmp, _pgradient, _totalSize, cudaMemcpyDeviceToHost));
+            checkCudaErrors(cudaFree(_pgradient));
             _pgradient = tmp;
         } else {
             std::cout << "Move tensor with pullptr _pgradient!" << std::endl;
         }
-    } else if (_dataMemType == cudaMemoryTypeDevice) {
+    } else if (targetMemType == cudaMemoryTypeDevice) {
         if (_pdata) {
-            cudaMalloc(&tmp, _totalSize);
-            cudaMemcpy(tmp, _pdata, _totalSize, cudaMemcpyHostToDevice);
-            cudaFree(_pdata);
+            checkCudaErrors(cudaMalloc(&tmp, _totalSize));
+            checkCudaErrors(cudaMemcpy(tmp, _pdata, _totalSize, cudaMemcpyHostToDevice));
+            delete[] _pdata;
             _pdata = tmp;
         } else {
             std::cout << "Move tensor with pullptr _pdata!" << std::endl;
         }
 
         if (_pgradient) {
-            cudaMalloc(&tmp, _totalSize);
-            cudaMemcpy(tmp, _pgradient, _totalSize, cudaMemcpyHostToDevice);
-            cudaFree(_pgradient);
+            checkCudaErrors(cudaMalloc(&tmp, _totalSize));
+            checkCudaErrors(cudaMemcpy(tmp, _pgradient, _totalSize, cudaMemcpyHostToDevice));
+            delete[] _pgradient;
             _pgradient = tmp;
         } else {
             std::cout << "Move tensor with pullptr _pgradient!" << std::endl;
@@ -298,7 +297,11 @@ void Tensor::fillDataRandom(float lower_bound, float upper_bound)
         std::uniform_real_distribution<float> dis(lower_bound, upper_bound);
         for (int i = 0; i < _elementCount; i++) _pdata[i] = dis(gen);
     } else if (_dataMemType == cudaMemoryTypeDevice) {
-        kinitializeRandom<<<(_elementCount + 511) / 512, 512>>>(_pdata, _totalSize, lower_bound, upper_bound);
+        kinitializeRandom<<<(_elementCount + 511) / 512, 512>>>(_pdata, _elementCount, lower_bound, upper_bound);
+        cudaDeviceSynchronize();
+        // printf("after kernel function : %s\n",cudaGetErrorString(cudaGetLastError()));
+        // this->to(cudaMemoryTypeHost);
+        // std::cout << *this << std::endl;
     }
 }
 
