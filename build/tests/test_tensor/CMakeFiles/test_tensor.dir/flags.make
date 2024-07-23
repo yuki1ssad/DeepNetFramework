@@ -3,15 +3,15 @@
 
 # compile CUDA with /usr/local/cuda/bin/nvcc
 # compile CXX with /usr/bin/c++
-CUDA_DEFINES = -DDEBUG=1 -DGFLAGS_IS_A_DLL=0
+CUDA_DEFINES = -DGFLAGS_IS_A_DLL=0
 
 CUDA_INCLUDES = --options-file CMakeFiles/test_tensor.dir/includes_CUDA.rsp
 
-CUDA_FLAGS = -g -G -std=c++14 --generate-code=arch=compute_86,code=[compute_86,sm_86] -fopenmp -Wunknown-pragmas
+CUDA_FLAGS =  --generate-line-info -std=c++14 --generate-code=arch=compute_86,code=[compute_86,sm_86] -fopenmp -Wunknown-pragmas
 
-CXX_DEFINES = -DDEBUG=1 -DGFLAGS_IS_A_DLL=0
+CXX_DEFINES = -DGFLAGS_IS_A_DLL=0
 
 CXX_INCLUDES = -I/home/wangxuefei/workspace/DeepNetFramework/include -I/home/wangxuefei/workspace/DeepNetFramework/src/.
 
-CXX_FLAGS = -g -fopenmp -Wunknown-pragmas
+CXX_FLAGS = -fopenmp -Wunknown-pragmas
 

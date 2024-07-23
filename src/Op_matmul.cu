@@ -28,6 +28,7 @@ void Op_matmul::forward()
         (_intensors[0]->_shape[0] + BLOCK.y - 1) / BLOCK.y
     );
     size_t sharedMem = BLOCK.x * BLOCK.y * sizeof(float) * 2;
+    // _intensors[0]->to(cudaMemoryTypeHost);
     kmatmulNaive<<<GRID, BLOCK, sharedMem, _cudaStream>>>(
         _intensors[0]->_pdata,
         _intensors[1]->_pdata,

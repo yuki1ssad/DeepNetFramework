@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cassert>
+#include <string>
 #include "Operators.h"
 #include "kernel_matmul.h"
 #include "kernel_transpose.h"
@@ -8,6 +9,8 @@
 
 class Op_matmul : public Operators
 {
+public:
+    std::string _name = "Op_matmul";
 public:
     Op_matmul(){}
     Op_matmul(bool endOfGraph) : Operators(endOfGraph) {}

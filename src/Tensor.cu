@@ -111,7 +111,7 @@ Tensor& Tensor::operator=(const Tensor& tensor)    // Copy Assignment Operator
 
                 if (tensor._dataMemType == cudaMemoryTypeHost) {
                     direct = cudaMemcpyHostToHost;
-                } else if (tensor._dataMemType == cudaMemoryTypeHost) {
+                } else if (tensor._dataMemType == cudaMemoryTypeDevice) {
                     direct = cudaMemcpyDeviceToHost;
                 }
 
@@ -127,7 +127,7 @@ Tensor& Tensor::operator=(const Tensor& tensor)    // Copy Assignment Operator
 
                 if (tensor._dataMemType == cudaMemoryTypeHost) {
                     direct = cudaMemcpyHostToDevice;
-                } else if (tensor._dataMemType == cudaMemoryTypeHost) {
+                } else if (tensor._dataMemType == cudaMemoryTypeDevice) {
                     direct = cudaMemcpyDeviceToDevice;
                 }
 
