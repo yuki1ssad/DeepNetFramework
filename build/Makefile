@@ -165,6 +165,19 @@ test_tensor/fast:
 	$(MAKE) $(MAKESILENT) -f tests/test_tensor/CMakeFiles/test_tensor.dir/build.make tests/test_tensor/CMakeFiles/test_tensor.dir/build
 .PHONY : test_tensor/fast
 
+#=============================================================================
+# Target rules for targets named test_kernels
+
+# Build rule for target.
+test_kernels: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_kernels
+.PHONY : test_kernels
+
+# fast build rule for target.
+test_kernels/fast:
+	$(MAKE) $(MAKESILENT) -f tests/test_kernels/CMakeFiles/test_kernels.dir/build.make tests/test_kernels/CMakeFiles/test_kernels.dir/build
+.PHONY : test_kernels/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -175,6 +188,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... all_in_one"
+	@echo "... test_kernels"
 	@echo "... test_network"
 	@echo "... test_tensor"
 .PHONY : help

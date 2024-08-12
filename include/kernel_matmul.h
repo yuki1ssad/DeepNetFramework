@@ -12,11 +12,11 @@ __global__ void kmatmulNaive(T* L, T* R, T* O, size_t M, size_t K, size_t N)
             tmp += L[rid * K + i] * R[i * N + cid];
         }
         O[rid * N + cid] = tmp;
-        printf("L[%d] = [%.2f]\n", 0, L[0]);
-        printf("L[%d] = [%.2f]\n", 1, L[1]);
-        printf("R[%d] = [%.2f]\n", 0, R[0]);
-        printf("R[%d] = [%.2f]\n", 1, R[1]);
-        printf("O[%d] = [%.2f]\n", rid * N + cid, O[rid * N + cid]);
+        // printf("L[%d] = [%.2f]\n", 0, L[0]);
+        // printf("L[%d] = [%.2f]\n", 1, L[1]);
+        // printf("R[%d] = [%.2f]\n", 0, R[0]);
+        // printf("R[%d] = [%.2f]\n", 1, R[1]);
+        // printf("O[%d] = [%.2f]\n", rid * N + cid, O[rid * N + cid]);
     }
 }
 

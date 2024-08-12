@@ -16,3 +16,7 @@
 /home/wangxuefei/workspace/DeepNetFramework/build/tests/test_tensor/CMakeFiles/test.dir
 /home/wangxuefei/workspace/DeepNetFramework/build/tests/test_tensor/CMakeFiles/edit_cache.dir
 /home/wangxuefei/workspace/DeepNetFramework/build/tests/test_tensor/CMakeFiles/rebuild_cache.dir
+/home/wangxuefei/workspace/DeepNetFramework/build/tests/test_kernels/CMakeFiles/test_kernels.dir
+/home/wangxuefei/workspace/DeepNetFramework/build/tests/test_kernels/CMakeFiles/test.dir
+/home/wangxuefei/workspace/DeepNetFramework/build/tests/test_kernels/CMakeFiles/edit_cache.dir
+/home/wangxuefei/workspace/DeepNetFramework/build/tests/test_kernels/CMakeFiles/rebuild_cache.dir

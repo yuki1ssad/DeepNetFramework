@@ -98,17 +98,35 @@ src/clean: src/CMakeFiles/all_in_one.dir/clean
 # Recursive "all" directory target.
 tests/all: tests/test_network/all
 tests/all: tests/test_tensor/all
+tests/all: tests/test_kernels/all
 .PHONY : tests/all
 
 # Recursive "preinstall" directory target.
 tests/preinstall: tests/test_network/preinstall
 tests/preinstall: tests/test_tensor/preinstall
+tests/preinstall: tests/test_kernels/preinstall
 .PHONY : tests/preinstall
 
 # Recursive "clean" directory target.
 tests/clean: tests/test_network/clean
 tests/clean: tests/test_tensor/clean
+tests/clean: tests/test_kernels/clean
 .PHONY : tests/clean
+
+#=============================================================================
+# Directory level rules for directory tests/test_kernels
+
+# Recursive "all" directory target.
+tests/test_kernels/all: tests/test_kernels/CMakeFiles/test_kernels.dir/all
+.PHONY : tests/test_kernels/all
+
+# Recursive "preinstall" directory target.
+tests/test_kernels/preinstall:
+.PHONY : tests/test_kernels/preinstall
+
+# Recursive "clean" directory target.
+tests/test_kernels/clean: tests/test_kernels/CMakeFiles/test_kernels.dir/clean
+.PHONY : tests/test_kernels/clean
 
 #=============================================================================
 # Directory level rules for directory tests/test_network
@@ -173,7 +191,7 @@ src/CMakeFiles/all_in_one.dir/clean:
 tests/test_network/CMakeFiles/test_network.dir/all: src/CMakeFiles/all_in_one.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/test_network/CMakeFiles/test_network.dir/build.make tests/test_network/CMakeFiles/test_network.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/test_network/CMakeFiles/test_network.dir/build.make tests/test_network/CMakeFiles/test_network.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=14,15,16 "Built target test_network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=17,18,19 "Built target test_network"
 .PHONY : tests/test_network/CMakeFiles/test_network.dir/all
 
 # Build rule for subdir invocation for target.
@@ -199,7 +217,7 @@ tests/test_network/CMakeFiles/test_network.dir/clean:
 tests/test_tensor/CMakeFiles/test_tensor.dir/all: src/CMakeFiles/all_in_one.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/test_tensor/CMakeFiles/test_tensor.dir/build.make tests/test_tensor/CMakeFiles/test_tensor.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/test_tensor/CMakeFiles/test_tensor.dir/build.make tests/test_tensor/CMakeFiles/test_tensor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=17,18,19 "Built target test_tensor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=20,21,22 "Built target test_tensor"
 .PHONY : tests/test_tensor/CMakeFiles/test_tensor.dir/all
 
 # Build rule for subdir invocation for target.
@@ -217,6 +235,32 @@ test_tensor: tests/test_tensor/CMakeFiles/test_tensor.dir/rule
 tests/test_tensor/CMakeFiles/test_tensor.dir/clean:
 	$(MAKE) $(MAKESILENT) -f tests/test_tensor/CMakeFiles/test_tensor.dir/build.make tests/test_tensor/CMakeFiles/test_tensor.dir/clean
 .PHONY : tests/test_tensor/CMakeFiles/test_tensor.dir/clean
+
+#=============================================================================
+# Target rules for target tests/test_kernels/CMakeFiles/test_kernels.dir
+
+# All Build rule for target.
+tests/test_kernels/CMakeFiles/test_kernels.dir/all: src/CMakeFiles/all_in_one.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/test_kernels/CMakeFiles/test_kernels.dir/build.make tests/test_kernels/CMakeFiles/test_kernels.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/test_kernels/CMakeFiles/test_kernels.dir/build.make tests/test_kernels/CMakeFiles/test_kernels.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles --progress-num=14,15,16 "Built target test_kernels"
+.PHONY : tests/test_kernels/CMakeFiles/test_kernels.dir/all
+
+# Build rule for subdir invocation for target.
+tests/test_kernels/CMakeFiles/test_kernels.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test_kernels/CMakeFiles/test_kernels.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangxuefei/workspace/DeepNetFramework/build/CMakeFiles 0
+.PHONY : tests/test_kernels/CMakeFiles/test_kernels.dir/rule
+
+# Convenience name for target.
+test_kernels: tests/test_kernels/CMakeFiles/test_kernels.dir/rule
+.PHONY : test_kernels
+
+# clean rule for target.
+tests/test_kernels/CMakeFiles/test_kernels.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/test_kernels/CMakeFiles/test_kernels.dir/build.make tests/test_kernels/CMakeFiles/test_kernels.dir/clean
+.PHONY : tests/test_kernels/CMakeFiles/test_kernels.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

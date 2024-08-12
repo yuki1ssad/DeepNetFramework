@@ -9,7 +9,7 @@
                 "-f",
                 "-o", "test_matmul_8",
                 "--import-source", "on",
-                "--set", "full",
+                "--set", "detailed",
                 "${workspaceFolder}/build/tests/test_kernels/test_kernels",
                 "--gtest_filter=*design/test_matmul*"
             ],
