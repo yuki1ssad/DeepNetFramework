@@ -41,6 +41,8 @@ src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o: /home/wangxuefei/workspace/De
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -84,6 +86,8 @@ src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o: /home/wangxuefei/workspace/De
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/cstdlib \
   /usr/include/stdlib.h \
@@ -100,13 +104,16 @@ src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o: /home/wangxuefei/workspace/De
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/assert.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.h \
@@ -124,6 +131,7 @@ src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o: /home/wangxuefei/workspace/De
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h \
@@ -200,6 +208,7 @@ src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o: /home/wangxuefei/workspace/De
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/bits/char_traits.h \
   /usr/include/c++/9/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
@@ -323,6 +332,7 @@ src/CMakeFiles/all_in_one.dir/Op_elementwise.cu.o: /home/wangxuefei/workspace/De
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/inttypes.h \
   /usr/include/gflags/gflags.h \
@@ -372,6 +382,8 @@ src/CMakeFiles/all_in_one.dir/Op_map.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -415,6 +427,8 @@ src/CMakeFiles/all_in_one.dir/Op_map.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/cstdlib \
   /usr/include/stdlib.h \
@@ -431,13 +445,16 @@ src/CMakeFiles/all_in_one.dir/Op_map.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/assert.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.h \
@@ -455,6 +472,7 @@ src/CMakeFiles/all_in_one.dir/Op_map.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h \
@@ -530,6 +548,7 @@ src/CMakeFiles/all_in_one.dir/Op_map.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/bits/char_traits.h \
   /usr/include/c++/9/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
@@ -653,6 +672,7 @@ src/CMakeFiles/all_in_one.dir/Op_map.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/inttypes.h \
   /usr/include/gflags/gflags.h \
@@ -702,6 +722,8 @@ src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -745,6 +767,8 @@ src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/cstdlib \
   /usr/include/stdlib.h \
@@ -761,13 +785,16 @@ src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/assert.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.h \
@@ -785,6 +812,7 @@ src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h \
@@ -843,6 +871,7 @@ src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
   /usr/include/stdint.h \
@@ -984,6 +1013,7 @@ src/CMakeFiles/all_in_one.dir/Op_matmul.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/inttypes.h \
   /usr/include/gflags/gflags.h \
@@ -1034,6 +1064,8 @@ src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -1077,6 +1109,8 @@ src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/cstdlib \
   /usr/include/stdlib.h \
@@ -1093,13 +1127,16 @@ src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/assert.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.h \
@@ -1117,6 +1154,7 @@ src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h \
@@ -1192,6 +1230,7 @@ src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/bits/char_traits.h \
   /usr/include/c++/9/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
@@ -1315,6 +1354,7 @@ src/CMakeFiles/all_in_one.dir/Op_reduce.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/inttypes.h \
   /usr/include/gflags/gflags.h \
@@ -1365,6 +1405,8 @@ src/CMakeFiles/all_in_one.dir/Operators.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -1408,6 +1450,8 @@ src/CMakeFiles/all_in_one.dir/Operators.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/cstdlib \
   /usr/include/stdlib.h \
@@ -1424,13 +1468,16 @@ src/CMakeFiles/all_in_one.dir/Operators.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/assert.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.h \
@@ -1448,6 +1495,7 @@ src/CMakeFiles/all_in_one.dir/Operators.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h \
@@ -1522,6 +1570,7 @@ src/CMakeFiles/all_in_one.dir/Operators.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/bits/char_traits.h \
   /usr/include/c++/9/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
@@ -1645,6 +1694,7 @@ src/CMakeFiles/all_in_one.dir/Operators.cu.o: /home/wangxuefei/workspace/DeepNet
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/inttypes.h \
   /usr/include/gflags/gflags.h \
@@ -1693,6 +1743,8 @@ src/CMakeFiles/all_in_one.dir/Tensor.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -1736,6 +1788,8 @@ src/CMakeFiles/all_in_one.dir/Tensor.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/cstdlib \
   /usr/include/stdlib.h \
@@ -1752,13 +1806,16 @@ src/CMakeFiles/all_in_one.dir/Tensor.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/assert.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.h \
@@ -1776,6 +1833,7 @@ src/CMakeFiles/all_in_one.dir/Tensor.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h \
@@ -1849,6 +1907,7 @@ src/CMakeFiles/all_in_one.dir/Tensor.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/bits/char_traits.h \
   /usr/include/c++/9/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
@@ -1973,6 +2032,7 @@ src/CMakeFiles/all_in_one.dir/Tensor.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/inttypes.h \
   /usr/include/gflags/gflags.h \
@@ -2021,6 +2081,8 @@ src/CMakeFiles/all_in_one.dir/compute_graph.cu.o: /home/wangxuefei/workspace/Dee
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -2064,6 +2126,8 @@ src/CMakeFiles/all_in_one.dir/compute_graph.cu.o: /home/wangxuefei/workspace/Dee
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/cstdlib \
   /usr/include/stdlib.h \
@@ -2080,13 +2144,16 @@ src/CMakeFiles/all_in_one.dir/compute_graph.cu.o: /home/wangxuefei/workspace/Dee
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/assert.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.h \
@@ -2104,6 +2171,7 @@ src/CMakeFiles/all_in_one.dir/compute_graph.cu.o: /home/wangxuefei/workspace/Dee
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h \
@@ -2184,6 +2252,7 @@ src/CMakeFiles/all_in_one.dir/compute_graph.cu.o: /home/wangxuefei/workspace/Dee
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
   /usr/include/stdint.h \
@@ -2310,6 +2379,7 @@ src/CMakeFiles/all_in_one.dir/compute_graph.cu.o: /home/wangxuefei/workspace/Dee
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/inttypes.h \
   /usr/include/gflags/gflags.h \
@@ -2358,6 +2428,8 @@ src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o: /home/wangxuefei/workspac
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -2401,6 +2473,8 @@ src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o: /home/wangxuefei/workspac
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/cstdlib \
   /usr/include/stdlib.h \
@@ -2417,13 +2491,16 @@ src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o: /home/wangxuefei/workspac
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/assert.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.h \
@@ -2441,6 +2518,7 @@ src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o: /home/wangxuefei/workspac
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h \
@@ -2489,6 +2567,7 @@ src/CMakeFiles/all_in_one.dir/kernel_elementwise.cu.o: /home/wangxuefei/workspac
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/bits/char_traits.h \
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/functexcept.h \
@@ -2609,6 +2688,8 @@ src/CMakeFiles/all_in_one.dir/kernel_map.cu.o: /home/wangxuefei/workspace/DeepNe
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -2652,6 +2733,8 @@ src/CMakeFiles/all_in_one.dir/kernel_map.cu.o: /home/wangxuefei/workspace/DeepNe
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/cstdlib \
   /usr/include/stdlib.h \
@@ -2668,13 +2751,16 @@ src/CMakeFiles/all_in_one.dir/kernel_map.cu.o: /home/wangxuefei/workspace/DeepNe
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/assert.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.h \
@@ -2692,6 +2778,7 @@ src/CMakeFiles/all_in_one.dir/kernel_map.cu.o: /home/wangxuefei/workspace/DeepNe
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h \
@@ -2740,6 +2827,7 @@ src/CMakeFiles/all_in_one.dir/kernel_map.cu.o: /home/wangxuefei/workspace/DeepNe
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/bits/char_traits.h \
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/functexcept.h \
@@ -2860,6 +2948,8 @@ src/CMakeFiles/all_in_one.dir/l1loss.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -2903,6 +2993,8 @@ src/CMakeFiles/all_in_one.dir/l1loss.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/cstdlib \
   /usr/include/stdlib.h \
@@ -2919,13 +3011,16 @@ src/CMakeFiles/all_in_one.dir/l1loss.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/assert.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.h \
@@ -2943,6 +3038,7 @@ src/CMakeFiles/all_in_one.dir/l1loss.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h \
@@ -3024,6 +3120,7 @@ src/CMakeFiles/all_in_one.dir/l1loss.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
   /usr/include/stdint.h \
@@ -3150,6 +3247,7 @@ src/CMakeFiles/all_in_one.dir/l1loss.cu.o: /home/wangxuefei/workspace/DeepNetFra
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/inttypes.h \
   /usr/include/gflags/gflags.h \
@@ -3204,6 +3302,8 @@ src/CMakeFiles/all_in_one.dir/network.cu.o: /home/wangxuefei/workspace/DeepNetFr
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -3247,6 +3347,8 @@ src/CMakeFiles/all_in_one.dir/network.cu.o: /home/wangxuefei/workspace/DeepNetFr
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/cstdlib \
   /usr/include/stdlib.h \
@@ -3263,13 +3365,16 @@ src/CMakeFiles/all_in_one.dir/network.cu.o: /home/wangxuefei/workspace/DeepNetFr
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/assert.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.h \
@@ -3287,6 +3392,7 @@ src/CMakeFiles/all_in_one.dir/network.cu.o: /home/wangxuefei/workspace/DeepNetFr
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h \
@@ -3369,6 +3475,7 @@ src/CMakeFiles/all_in_one.dir/network.cu.o: /home/wangxuefei/workspace/DeepNetFr
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
   /usr/include/stdint.h \
@@ -3495,6 +3602,7 @@ src/CMakeFiles/all_in_one.dir/network.cu.o: /home/wangxuefei/workspace/DeepNetFr
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/inttypes.h \
   /usr/include/gflags/gflags.h \
@@ -3543,6 +3651,8 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -3586,6 +3696,8 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/cstdlib \
   /usr/include/stdlib.h \
@@ -3602,13 +3714,16 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/assert.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.h \
@@ -3626,6 +3741,7 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h \
   /usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h \
@@ -3701,6 +3817,7 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
   /usr/include/stdint.h \
@@ -3773,6 +3890,7 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/c++/9/vector \
   /usr/include/c++/9/bits/stl_construct.h \
@@ -3814,11 +3932,11 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /home/wangxuefei/workspace/DeepNetFramework/include/kernel_matmul.h:
 
-/home/wangxuefei/workspace/DeepNetFramework/include/kernel_map.h:
-
 /usr/include/glog/vlog_is_on.h:
 
 /usr/include/glog/log_severity.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
@@ -3906,11 +4024,17 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/c++/9/istream:
 
-/usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h:
+/usr/include/c++/9/bits/ostream.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+/usr/include/c++/9/bits/basic_ios.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+/usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h:
+
+/usr/include/c++/9/bits/streambuf_iterator.h:
+
+/home/wangxuefei/workspace/DeepNetFramework/src/Op_reduce.cu:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h:
 
 /usr/include/c++/9/cmath:
 
@@ -3918,19 +4042,11 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/c++/9/bits/std_abs.h:
+
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/c++/9/sstream:
-
-/usr/include/c++/9/bits/random.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /home/wangxuefei/workspace/DeepNetFramework/include/Op_map.h:
 
@@ -3947,6 +4063,10 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
 
 /usr/include/endian.h:
 
@@ -3967,6 +4087,12 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 /usr/local/cuda/targets/x86_64-linux/include/sm_20_atomic_functions.h:
 
 /usr/include/sched.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/wctype.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/c++/9/bits/vector.tcc:
 
@@ -3998,23 +4124,17 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/c++/9/string:
 
-/usr/local/cuda/targets/x86_64-linux/include/curand_precalc.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h:
-
 /usr/include/c++/9/bits/concept_check.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/include/gflags/gflags_gflags.h:
 
 /usr/include/c++/9/new:
 
-/usr/include/x86_64-linux-gnu/bits/errno.h:
+/usr/include/time.h:
 
-/usr/include/c++/9/bits/move.h:
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/c++/9/bits/locale_facets.tcc:
 
@@ -4046,6 +4166,8 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/c++/9/bits/exception_defines.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
 /usr/include/c++/9/bits/predefined_ops.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
@@ -4058,11 +4180,13 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
+/home/wangxuefei/workspace/DeepNetFramework/include/kernel_map.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+/usr/include/c++/9/bits/ostream_insert.h:
+
 /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/surface_functions.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/library_types.h:
 
 /usr/include/c++/9/ext/type_traits.h:
 
@@ -4084,9 +4208,21 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/include/c++/9/bits/stl_tree.h:
+/usr/include/c++/9/sstream:
 
-/usr/include/ctype.h:
+/usr/include/c++/9/bits/random.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/library_types.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/surface_functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
@@ -4098,7 +4234,15 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/string.h:
 
+/usr/include/c++/9/cwctype:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h:
+
 /usr/include/c++/9/stdexcept:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/texture_indirect_functions.h:
 
@@ -4156,10 +4300,6 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/c++/9/bits/alloc_traits.h:
 
-/usr/include/c++/9/bits/std_abs.h:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
 /usr/include/stdio.h:
 
 /usr/include/features.h:
@@ -4192,10 +4332,6 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h:
 
-/home/wangxuefei/workspace/DeepNetFramework/include/Op_reduce.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/crt/device_functions.h:
-
 /home/wangxuefei/workspace/DeepNetFramework/include/compute_graph.h:
 
 /home/wangxuefei/workspace/DeepNetFramework/src/Op_elementwise.cu:
@@ -4222,6 +4358,18 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/c++/9/bits/basic_string.h:
 
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/9/bits/stl_tree.h:
+
+/usr/include/ctype.h:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda_texture_types.h:
+
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
@@ -4236,13 +4384,9 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/stdc-predef.h:
 
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
 /usr/include/c++/9/bits/stl_iterator_base_types.h:
-
-/usr/include/inttypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/wctype.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/crt/host_config.h:
 
@@ -4256,9 +4400,21 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/c++/9/stdlib.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathinline.h:
+
 /usr/local/cuda/targets/x86_64-linux/include/cuda.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/device_atomic_functions.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/curand_precalc.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda_surface_types.h:
+
+/home/wangxuefei/workspace/DeepNetFramework/include/Op_reduce.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/crt/device_functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
@@ -4294,23 +4450,19 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/local/cuda/targets/x86_64-linux/include/sm_20_intrinsics.hpp:
 
-/usr/include/c++/9/bits/basic_ios.tcc:
-
 /usr/include/c++/9/bits/unordered_set.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/sm_32_intrinsics.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
 /usr/local/cuda/targets/x86_64-linux/include/sm_32_intrinsics.hpp:
 
 /usr/include/c++/9/bits/locale_conv.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h:
-
-/home/wangxuefei/workspace/DeepNetFramework/src/Op_reduce.cu:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/sm_61_intrinsics.h:
 
@@ -4360,8 +4512,6 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/c++/9/cassert:
 
-/usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h:
-
 /usr/local/cuda/targets/x86_64-linux/include/curand_globals.h:
 
 /home/wangxuefei/workspace/DeepNetFramework/include/Operators.h:
@@ -4392,9 +4542,9 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/c++/9/ext/new_allocator.h:
 
@@ -4426,6 +4576,14 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
+/usr/include/c++/9/bits/move.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
+/usr/include/wchar.h:
+
+/usr/include/c++/9/bits/localefwd.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
@@ -4437,10 +4595,6 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 /usr/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/wchar.h:
-
-/usr/include/c++/9/bits/localefwd.h:
 
 /usr/include/locale.h:
 
@@ -4472,8 +4626,6 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/asm-generic/errno.h:
 
-/usr/include/c++/9/bits/ostream_insert.h:
-
 /usr/include/c++/9/bits/cxxabi_forced.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
@@ -4486,20 +4638,6 @@ src/CMakeFiles/all_in_one.dir/tools_cuda.cu.o: /home/wangxuefei/workspace/DeepNe
 
 /usr/include/errno.h:
 
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/linux/errno.h:
-
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h:
-
-/usr/include/c++/9/cwctype:
-
 /usr/include/c++/9/bits/locale_classes.tcc:
-
-/usr/include/c++/9/bits/streambuf_iterator.h:
-
-/usr/include/c++/9/bits/ostream.tcc:
