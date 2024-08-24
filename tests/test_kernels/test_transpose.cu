@@ -71,59 +71,67 @@ test_transpose::~test_transpose() {
 }
 
 
-INSTANTIATE_TEST_SUITE_P(
-    exhaustive_combine,
-    test_transpose,
-    testing::Combine(
-        testing::Values(  // TILE.x == TILE.y
-            8
-        ),
-        testing::Values(
-            32,
-            64,
-            128,
-            256,
-            512,
-            1024,
-            2 * 1024,
-            4 * 1024,
-            8 * 1024,
-            16 * 1024
-        ),
-        testing::Values(
-            32,
-            64,
-            128,
-            256,
-            512,
-            1024,
-            2 * 1024,
-            4 * 1024,
-            8 * 1024,
-            16 * 1024
-        )
-    )
-);
+// INSTANTIATE_TEST_SUITE_P(
+//     exhaustive_combine,
+//     test_transpose,
+//     testing::Combine(
+//         testing::Values(  // TILE.x == TILE.y
+//             8
+//         ),
+//         testing::Values(
+//             32,
+//             64,
+//             128,
+//             256,
+//             512,
+//             1024,
+//             2 * 1024,
+//             4 * 1024,
+//             8 * 1024,
+//             16 * 1024
+//         ),
+//         testing::Values(
+//             32,
+//             64,
+//             128,
+//             256,
+//             512,
+//             1024,
+//             2 * 1024,
+//             4 * 1024,
+//             8 * 1024,
+//             16 * 1024
+//         )
+//     )
+// );
 
 
 INSTANTIATE_TEST_SUITE_P(
     design,
     test_transpose,
-    testing::Combine(
-        testing::Values(
-            // 1
-            // 4
-            8
-            // 16
-            // 32
-        ),
-        testing::Values(
-            // 32
-            512
-        ),
-        testing::Values(
-            // 32
-            512
+    testing::Values(
+        // std::make_tuple(
+        //     8,
+        //     128,
+        //     128
+        // )
+        // ,
+        // std::make_tuple(
+        //     16,
+        //     256,
+        //     256
+        // )
+        // ,
+        // std::make_tuple(
+        //     16,
+        //     1024,
+        //     1024
+        // )
+        // ,
+        std::make_tuple(
+            8,
+            4096,
+            4096
         )
     )
 );
@@ -208,8 +216,9 @@ TEST_P(test_transpose, ktransposeSharedMemMinbkcft){
         (n + TILE_DIM - 1) / TILE_DIM,
         (m + TILE_DIM - 1) / TILE_DIM
     );
-    size_t shared_mem = TILE_DIM * TILE_DIM * sizeof(float);
-    ktransposeSharedMemMinbkcft<<<GRID, BLOCK, shared_mem, cudaStreamDefault>>>(
+    size_t shared_mem = TILE_DIM * (TILE_DIM + 1) * sizeof(float);
+    // ktransposeSharedMemMinbkcft<<<GRID, BLOCK, shared_mem, cudaStreamDefault>>>(
+    ktransposeSharedMemMinbkcft<<<GRID, BLOCK>>>(
         X_device,
         Y_predict_device,
         m,

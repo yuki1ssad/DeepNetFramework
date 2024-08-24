@@ -7,13 +7,16 @@
             "command": "/usr/local/NVIDIA-Nsight-Compute/ncu",
             "args": [
                 "-f",
-                // "-o", "test_matmul_8",
-                "-o", "test_transpose",
-                "--import-source", "on",
-                "--set", "full",
+                "-o",
+                "test_matmul",
+                // "test_transpose",
+                "--import-source",
+                "on",
+                "--set",
+                "full",
                 "${workspaceFolder}/build/tests/test_kernels/test_kernels",
-                // "--gtest_filter=*design/test_matmul*"
-                "--gtest_filter=*design/test_transpose*"
+                "--gtest_filter=*design/test_matmul*"
+                // "--gtest_filter=*design/test_transpose*"
             ],
             "dependsOrder": "sequence",
             "dependsOn": [

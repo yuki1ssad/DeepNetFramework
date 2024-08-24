@@ -7,7 +7,10 @@
             "request": "launch",
             "program": "${workspaceFolder}/build/tests/test_kernels/test_kernels",
             "preLaunchTask": "build debug",
-            "args": "--logtostderr=1 --minloglevel=0 --v=8 --gtest_filter=*test_matmul.positive*",
+            // "args": "--logtostderr=1 --minloglevel=0 --v=8 --gtest_filter=*test_matmul.positive*",
+            "args": [
+                "--gtest_filter=design/test_transpose*"
+            ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": []

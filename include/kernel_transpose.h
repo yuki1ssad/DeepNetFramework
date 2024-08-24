@@ -44,26 +44,33 @@ __device__ int ktranspose_minbkcft_index(int index, int group_size) {
 template <typename DATA_TYPE>
 __global__ void ktransposeSharedMemMinbkcft(DATA_TYPE *In, DATA_TYPE *Out, size_t M, size_t N) {
     assert(blockDim.x == blockDim.y && blockDim.z == 1);
-    extern __shared__ DATA_TYPE tile[];
+    // extern __shared__ DATA_TYPE tile[]; // [TILE_DIM, TILE_DIM + 1]
+    // __shared__ DATA_TYPE tile[16][17];
+    __shared__ DATA_TYPE tile[8][8 + 1];
 
     size_t x = blockIdx.x * blockDim.x + threadIdx.x;
     size_t y = blockIdx.y * blockDim.y + threadIdx.y;
-    int minbkcft_index = ktranspose_minbkcft_index<DATA_TYPE>(
-        threadIdx.x * blockDim.y + threadIdx.y,
-        blockDim.x
-    );
-    tile[minbkcft_index] = (x < N && y < M) ? In[y * N + x] : 0;
+    // int minbkcft_index = ktranspose_minbkcft_index<DATA_TYPE>(
+    //     threadIdx.x * blockDim.y + threadIdx.y,
+    //     blockDim.x
+    // );
+    // int minbkcft_index = threadIdx.y * (blockDim.x + 1) + threadIdx.x;
+    // tile[minbkcft_index] = (x < N && y < M) ? In[y * N + x] : 0;
+    tile[threadIdx.y][threadIdx.x] = (x < N && y < M) ? In[y * N + x] : 0;
 
     __syncthreads();
 
     x = blockIdx.y * blockDim.y + threadIdx.x;
     y = blockIdx.x * blockDim.x + threadIdx.y;
     if (x < M && y < N) {
-        minbkcft_index = ktranspose_minbkcft_index<DATA_TYPE>(
-            threadIdx.y * blockDim.x + threadIdx.x,
-            blockDim.x
-        );
-        Out[y * M + x] = tile[minbkcft_index];
+        // minbkcft_index = ktranspose_minbkcft_index<DATA_TYPE>(
+        //     threadIdx.y * blockDim.x + threadIdx.x,
+        //     blockDim.x
+        // );
+        // minbkcft_index = threadIdx.x * (blockDim.y) + threadIdx.y;
+        // minbkcft_index = threadIdx.x * (blockDim.x + 1) + threadIdx.y;
+        // Out[y * M + x] = tile[minbkcft_index];
+        Out[y * M + x] = tile[threadIdx.x][threadIdx.y];
     }
 }
 

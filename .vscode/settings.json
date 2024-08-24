@@ -53,6 +53,8 @@
         "iomanip": "cpp",
         "cassert": "cpp",
         "unordered_set": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "chrono": "cpp",
+        "ratio": "cpp"
     }
 }

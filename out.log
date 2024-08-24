@@ -1,0 +1,5 @@
+[ 56%] Built target all_in_one
+[ 69%] Built target test_network
+[ 82%] Built target test_tensor
+Consolidate compiler generated dependencies of target test_kernels
+[ 86%] Building CUDA object tests/test_kernels/CMakeFiles/test_kernels.dir/test_matmul.cu.o
